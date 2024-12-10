@@ -1,0 +1,47 @@
+napa
+3630
+2.25
+
+ace plus
+210
+2.75
+
+metril
+470
+3.35
+napa extra
+670
+3.75
+
+
+ginger
+230
+11.55
+
+cloves
+360
+4.88
+
+anise
+280
+6.86
+
+saffron
+540
+20.43
+
+oregano
+444
+17.22
+
+garam masala
+175
+24.33
+
+dried fruit
+274
+11.57
+
+cinamon
+232
+8.65
