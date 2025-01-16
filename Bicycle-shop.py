@@ -1,5 +1,5 @@
 item_dict={}
-f = open("F:/sawm/data01.txt","r")
+f = open("./data01.txt","r")
 while True:
     item = f.readline()
     if item=='':
@@ -12,18 +12,10 @@ while True:
     item_dict[item]=[qntt,uprc]
 f.close()
 
-"""item_dict = {"napa":[2500,1.75],
-             "monas":[20,9.5],
-             "seclo":[510,8],
-             "norium":[300,3.5],
-             "metril":[450,4],
-             "ace plus":[390,2.5],
-             "napa extend":[430,2.25],
-             "noclog":[300,5]}
-"""
+
 def show_dict():
     print(30*"=")
-    print("Available items and quantity")
+    print("Available brands and quantity")
     print(30*"=")
     for x in item_dict:
         print(x,(15-len(x))*" ",
@@ -38,28 +30,28 @@ def inc_quant(key,val):
 def receive_order():
     print("order received:")
     while True:
-        item = input("Items(x to stop):")
+        item = input("Brand(x to stop):")
         if item =="x":
             break
         value =int (input("Quantity:"))
         if item not in item_dict:
-            print("new item found!")
+            print("new brand found!")
             uprice = float (input("unit price:"))
             item_dict[item]=[value,uprice]
             continue
         inc_quant(item,value)
 
-    #show_dict()
+
 def process_demand():
     print("input demand:")
     demand_list = []
 
     while True:
-        item = input("Items(x to stop):")
+        item = input("Brand(x to stop):")
         if item =="x":
             break
         if item not in item_dict:
-            print(f"the item '{item}' is not available")
+            print(f"the brand '{item}' is not available")
             continue
         value =int (input("Quantity:"))
         if value>item_dict[item][0]:
@@ -75,7 +67,7 @@ def process_demand():
     
     print ("**payment receipt**".center(40))
     print (40*"=")
-    print ("item",7*" ","quant."," ","u.price",2*" ","s.total")
+    print ("brand",7*" ","quant."," ","u.price",2*" ","s.total")
     tprice=0
     for x in demand_list:
           tprice+=x[3]
@@ -85,10 +77,7 @@ def process_demand():
                  (9-len(str("%.2f"%x[3])))*" ","%.2f"%x[3])
     print (40*"-")
     print ("Total Price:"," ",tprice)
-    #print (demand_list)
-    #show_dict()
-    
-#show_dict()
+
 while True:
     show_dict()
     print ("choose an option:")
@@ -105,7 +94,7 @@ while True:
     else:
         continue
 
-f = open("F:/sawm/data01.txt","w")  
+f = open("./data01.txt","w")  
 for x in item_dict:
     f.write(x+"\n")
     f.write(str(item_dict[x][0])+"\n")
