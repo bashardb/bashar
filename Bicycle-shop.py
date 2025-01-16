@@ -2,14 +2,16 @@ item_dict={}
 f = open("./data01.txt","r")
 while True:
     item = f.readline()
+    if item == '\n': continue
     if item=='':
         break
     qntt= f.readline()
     uprc = f.readline()
     item = item[:len(item)-1]
-    qntt = int(qntt[:len(item)-1])
-    uprcprc = float(uprc[:len(item)-1])
+    qntt = int(qntt[:len(item)-1].strip())
+    uprc = float(uprc[:len(item)-1].strip())
     item_dict[item]=[qntt,uprc]
+    #print(f"Item: {item}, Quantity: {qntt}, Price: {uprc}")
 f.close()
 
 
@@ -94,11 +96,11 @@ while True:
     else:
         continue
 
+
 f = open("./data01.txt","w")  
 for x in item_dict:
     f.write(x+"\n")
     f.write(str(item_dict[x][0])+"\n")
     f.write(str(item_dict[x][1])+"\n")
+    f.write('\n')
 f.close()
-    
-    
