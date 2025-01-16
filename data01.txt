@@ -1,48 +1,47 @@
 Veloce
-3630
+300
 15000
 
 Hero
-210
+2000
 8000
 
 Phoenix
-470
+700
 12500
 
 Diganta cycle
-670
+800
 13000
 
-
 Veloce 15
-230
+200
 20000
 
 Schwinn Bicycle
-360
+100
 18000
 
 Camp bicycle
-280
+80
 24000
 
 Giant Bicycle
-540
+500
 20300
 
 Hercules Bicycle
-444
+40
 10000
 
 Duranta cycle
-175
+900
 12600
 
 Foxter
-274
+27
 30000
 
 Haolaixi
-232
+60
 35000
