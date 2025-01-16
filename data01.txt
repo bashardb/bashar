@@ -1,47 +1,48 @@
-napa
+Veloce
 3630
-2.25
+15000
 
-ace plus
+Hero
 210
-2.75
+8000
 
-metril
+Phoenix
 470
-3.35
-napa extra
+12500
+
+Diganta cycle
 670
-3.75
+13000
 
 
-ginger
+Veloce 15
 230
-11.55
+20000
 
-cloves
+Schwinn Bicycle
 360
-4.88
+18000
 
-anise
+Camp bicycle
 280
-6.86
+24000
 
-saffron
+Giant Bicycle
 540
-20.43
+20300
 
-oregano
+Hercules Bicycle
 444
-17.22
+10000
 
-garam masala
+Duranta cycle
 175
-24.33
+12600
 
-dried fruit
+Foxter
 274
-11.57
+30000
 
-cinamon
+Haolaixi
 232
-8.65
+35000
